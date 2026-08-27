@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BOCETO</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <h2>Ingreso de datos</h2>
+            <form id="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono">
+                </div>
+                <div class="campo">
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento">
+                </div>
+
+                <button type="submit">Mostrar informacion</button>
+            </form>
+
+            <div id="tarjeta_resultado" class="resultado">
+                <p class="placeholder-text">Aqui aparecen los datos ingresados</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
