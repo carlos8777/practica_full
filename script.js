@@ -3,7 +3,7 @@ const resultado = document.getElementById('tarjeta_resultado');
 
 async function obtenerUsuarios() {
     try{
-        const respuesta = await fetch('http://localhost:3000/api/usuarios');
+        const respuesta = await fetch('https://mi-servidor-ov7f.onrender.com');
         const datos = await respuesta.json();
 
         if (datos.exito) {
