@@ -3,7 +3,7 @@ const resultado = document.getElementById('tarjeta_resultado');
 
 async function obtenerUsuarios() {
     try{
-        const respuesta = await fetch('https://mi-servidor-ov7f.onrender.com');
+        const respuesta = await fetch('/api/usuarios');
         const datos = await respuesta.json();
 
         if (datos.exito) {
@@ -24,7 +24,7 @@ formulario.addEventListener('submit', async function (event) {
     const telefono = telefonoInput ? parseInt(telefonoInput, 10) : null;
 
     try {
-        const respuesta = await fetch('http://localhost:3000/api/guardar', {
+        const respuesta = await fetch('/api/guardar', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nombre, correo, telefono, fecha_nacimiento })
